@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+menu {
+width:1200}
+
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/ /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+a {
+  text-decoration: none;
+  /*убираем подчеркивание текста ссылок*/
+  background:#dfdfdf; /*добавляем фон к пункту меню*/
+  color:#404040; /*меняем цвет ссылок*/
+  padding:0px 25px; /*добавляем отступ*/
+  font-family: 'Open Sans', sans-serif;f
+  font-size: 15px;
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block;
+  box-shadow: 0 1px 4px 0 rgba(117,117,117,.5);
+    border-radius: 2px;
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+  background:#fff;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+a:after {
+    background-color: #ffeb3b;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+.product-wrapper {
+	display: block;
+	color:#404040;
+	font-family: 'Open Sans', sans-serif;f
+	/*border: 1px solid #b5e9a7;*/
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	height: 300px;
+	padding: 3px 0 2px 12px;
+	font-size: 13px;
+	position: relative;
+
+    line-height: 1.55em;
+}
+
+h1{
+font-family: 'Open Sans', sans-serif;f
+position: relative;
+padding: 0px 0 0px 50px;
+
+color: #202020;
+font-weight: 700;
+font-size: 28px;
+
+
+}
+
+.product-price {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: #222;
+}
+
+.product-dost {
+color: #070;
+}
+
+.product-sam {
+color: #222;
+}
+
+.product-info{
+line-height: 1.55em;
+}

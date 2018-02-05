@@ -1,0 +1,47 @@
+<html>
+
+    <body>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ title.name }} - купить в нашем каталоге</title>
+        <h1>{{ title.name }}</h1>
+        <menu>
+            <ul>
+    <li><a href="/">Каталог</a></li>
+    <li><a href="#">Характеристики</a></li>
+    <li><a href="#">Модификации</a></li>
+    <li><a href="#">Цены</a></li>
+
+</ul>
+
+<ul class="products clearfix">
+	<li class="product-wrapper">
+    <img src={{img_source_big}}>
+	</li>
+	<li class="product-wrapper">
+
+		<b>Коротко о товаре:</b><br><br>
+Процессор: {{ prod.proc}}<br>
+Частота процессора: {{ prod.chastot}}<br>
+Объем оперативной памяти: {{ prod.oper_m}}<br>
+Объем жесткого диска: {{ prod.hdd}}<br>
+Диагональ экрана: {{ prod.monit}}<br>
+Видеокарта: {{ prod.video}}<br>
+Вес: {{ prod.weight}}<br>
+Оптический привод: {{ prod.optic}}<br>
+4G LTE: {{ prod.g4}}<br>
+Bluetooth: {{ prod.blue}}<br>
+Wi-Fi: {{ prod.wifi}}
+<br>
+<p class="product-info">
+<p class="product-price">от {{ prod.price}} б.р.</p>
+<p class="product-dost"><b>Бесплатная доставка, сегодня</b></p>
+<p class="product-sam">Есть самовывоз</p></p>
+	</li>
+	<li class="product-wrapper">
+
+	</li>
+
+</ul>
+        </menu>
+    </body>
+</html>

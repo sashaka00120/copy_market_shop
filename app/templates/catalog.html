@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style-catalog.css') }}">
+
+        <title>Ноутбуки - купить в нашем каталоге</title>
+    </head>
+    <body>
+
+<ul class="products clearfix">
+
+<li class="product-wrapper">
+		<a href="/products/{{prod[0].id_prod.id}}" class="product">
+        <img src="/static/img/{{prod[0].id_prod.id}}_200.jpg">
+
+ <p class="product-name">{{ prod[0].id_prod.name}}<br></p>
+         <p class="product-price">от {{ prod[0].price}} б.р.</p>
+
+
+        </a>
+	</li>
+ <li class="product-wrapper">
+		<a href="/products/{{prod[1].id_prod.id}}" class="product">
+        <img src="/static/img/{{prod[1].id_prod.id}}_200.jpg">
+
+ <p class="product-name">{{ prod[1].id_prod.name}}<br></p>
+         <p class="product-price">от {{ prod[1].price}} б.р.</p>
+
+
+        </a>
+	</li>
+ <li class="product-wrapper">
+		<a href="/products/{{prod[2].id_prod.id}}" class="product">
+        <img src="/static/img/{{prod[2].id_prod.id}}_200.jpg">
+
+ <p class="product-name">{{ prod[2].id_prod.name}}<br></p>
+         <p class="product-price">от {{ prod[2].price}} б.р.</p>
+
+
+        </a>
+	</li>
+ <li class="product-wrapper">
+		<a href="/products/{{prod[3].id_prod.id}}" class="product">
+        <img src="/static/img/{{prod[3].id_prod.id}}_200.jpg">
+
+ <p class="product-name">{{ prod[3].id_prod.name}}<br></p>
+         <p class="product-price">от {{ prod[3].price}} б.р.</p>
+
+
+        </a>
+	</li>
+ <li class="product-wrapper">
+		<a href="/products/{{prod[4].id_prod.id}}" class="product">
+        <img src="/static/img/{{prod[4].id_prod.id}}_200.jpg">
+
+ <p class="product-name">{{ prod[4].id_prod.name}}<br></p>
+         <p class="product-price">от {{ prod[4].price}} б.р.</p>
+
+
+        </a>
+	</li>
+ <li class="product-wrapper">
+		<a href="/products/{{prod[5].id_prod.id}}" class="product">
+        <img src="/static/img/{{prod[5].id_prod.id}}_200.jpg">
+
+ <p class="product-name">{{ prod[5].id_prod.name}}<br></p>
+         <p class="product-price">от {{ prod[5].price}} б.р.</p>
+
+
+        </a>
+	</li>
+</ul>
+    </body>
+</html>
